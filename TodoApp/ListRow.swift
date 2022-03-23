@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ListRow: View {
     let task: String
+    let isCheck: Bool
     var body: some View {
         HStack{
-            Text("□")
+            if isCheck{
+                Text("✔︎")
+            }else{
+                Text("□")
+            }
             Text(task)
         }
     }
@@ -19,6 +24,6 @@ struct ListRow: View {
 
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ListRow(task: "料理")
+        ListRow(task: "料理",isCheck: false)
     }
 }
