@@ -11,7 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                ListRow()
+                ListRow(task: "マムシ")
+                ListRow(task: "マムシ")
+                ListRow(task: "マムシ")
+                
                 Text("+")
                     .font(.title)
             }
