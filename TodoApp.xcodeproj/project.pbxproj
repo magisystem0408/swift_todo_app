@@ -15,6 +15,8 @@
 		C65B884527EAB8ED00932A19 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B884427EAB8ED00932A19 /* TodoAppUITests.swift */; };
 		C65B884727EAB8ED00932A19 /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B884627EAB8ED00932A19 /* TodoAppUITestsLaunchTests.swift */; };
 		C65B885427EABB8500932A19 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B885327EABB8500932A19 /* ListRow.swift */; };
+		C65B885627EB06DB00932A19 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B885527EB06DB00932A19 /* UserData.swift */; };
+		C65B885827EB07CD00932A19 /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B885727EB07CD00932A19 /* UserTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		C65B884427EAB8ED00932A19 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		C65B884627EAB8ED00932A19 /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C65B885327EABB8500932A19 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		C65B885527EB06DB00932A19 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C65B885727EB07CD00932A19 /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				C65B882927EAB8EA00932A19 /* TodoAppApp.swift */,
 				C65B882B27EAB8EA00932A19 /* ContentView.swift */,
+				C65B885727EB07CD00932A19 /* UserTask.swift */,
+				C65B885527EB06DB00932A19 /* UserData.swift */,
 				C65B885327EABB8500932A19 /* ListRow.swift */,
 				C65B882D27EAB8EC00932A19 /* Assets.xcassets */,
 				C65B882F27EAB8EC00932A19 /* Preview Content */,
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65B885827EB07CD00932A19 /* UserTask.swift in Sources */,
 				C65B882C27EAB8EA00932A19 /* ContentView.swift in Sources */,
 				C65B882A27EAB8EA00932A19 /* TodoAppApp.swift in Sources */,
+				C65B885627EB06DB00932A19 /* UserData.swift in Sources */,
 				C65B885427EABB8500932A19 /* ListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
