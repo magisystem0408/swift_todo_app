@@ -7,14 +7,25 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    // useStateと同義
+    @ObservedObject var userData = UserData()
+    
     var body: some View {
         NavigationView{
             List{
-                ListRow(task: "マムシ")
-                ListRow(task: "マムシ")
-                ListRow(task: "マムシ")
-                
+                ForEach(userData.tasks){ task in
+                    Button(action:{
+                        //firstIndexは要素を探してindexに番号を入れる
+                        guard let index =
+                                self.userData.tasks
+                                .firstIndex(of: task)else{return}
+                        self.userData.tasks[index].checked.toggle()
+                    }){
+                        ListRow(task: task.title, isCheck: task.checked)
+                    }
+                }
                 Text("+")
                     .font(.title)
             }
