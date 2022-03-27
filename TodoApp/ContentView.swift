@@ -17,12 +17,15 @@ struct ContentView: View {
             List{
                 ForEach(userData.tasks){ task in
                     Button(action:{
-                        self.userData.tasks[0].checked.toggle()
+                        //firstIndexは要素を探してindexに番号を入れる
+                        guard let index =
+                                self.userData.tasks
+                                .firstIndex(of: task)else{return}
+                        self.userData.tasks[index].checked.toggle()
                     }){
                         ListRow(task: task.title, isCheck: task.checked)
                     }
                 }
-                
                 Text("+")
                     .font(.title)
             }
